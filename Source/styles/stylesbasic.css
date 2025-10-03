@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+/* Верхний блок */
+.block1 {
+    background-color: #bbdefb;
+    overflow: hidden;
+}
+
+/* Средний блок как таблица для равной высоты колонок */
+.middle {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 15px;
+}
+
+/* Колонки среднего блока */
+.block2, .center, .block4 {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 10px; /* промежуток между колонками */
+}
+
+/* Левый блок */
+.block2 {
+    background-color: #c8e6c9;
+}
+
+/* Центральная колонка */
+.center {
+    vertical-align: top;
+}
+
+/* Блок меню */
+.menu {
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+}
+
+/* Блок3 */
+.block3 {
+    background-color: #f0f4c3;
+}
+
+/* Правый блок */
+.block4 {
+    background-color: #ffecb3;
+}
+
+/* Нижний блок */
+.block-y {
+    background-color: #c5cae9;
+    text-align: center;
+}
+
+/* Стили меню */
+.menu ul, .menu ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+    .middle {
+        display: block;
+    }
+    .block2, .center, .block4 {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .center {
+        margin-bottom: 15px;
+    }
+}
